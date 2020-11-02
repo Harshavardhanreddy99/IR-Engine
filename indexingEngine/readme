@@ -1,0 +1,29 @@
+Setup steps :
+1. first install all requirements using this command:
+=> pip install -r requirements.txt
+2. Run the script using
+=> python main.py
+
+Check the parse_output.txt file:
+file contains token dictionary and document dictionary
+(token dictionary and document dictionary separated by ".........")
+
+Explanation :
+We are using nltk for text processing
+
+Algorithm for text processing engine:
+1. Read a file
+2. Extract All "DOC" tags and its data
+3. Give Extracted data to text processing module
+-> Task of Text Processing Module:
+  a) Remove all punctuations
+  b) Tokenization
+  c) Remove numbers and alphanumeric strings
+  d) Remove stopwords
+  e) stem words using PorterStemmer
+  f) remove duplicate tokens 
+4. Do 1 to 3 steps for all files in dataset
+5. create dictionary of unique and processed Tokens and also create dictionary of documents
+
+
+
